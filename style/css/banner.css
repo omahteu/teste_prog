@@ -1,0 +1,114 @@
+div.mainBanner{
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+}
+	/* div.mainBanner:before,
+	div.mainBanner:after{
+		content: '';
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    top: 620px;
+    position: absolute;
+    z-index: 997;
+	} */
+
+	div.mainBanner:before{
+	    left: 0;
+    	transform: skewY(7.5deg);
+	}
+
+	div.mainBanner:after{
+	    right: 0;
+	    transform: skewY(-7.5deg);
+	}
+
+	div.bannerItem{
+		background-size: cover;
+		width: 100%;
+		padding-top: 80px;
+		padding-bottom: 160px;
+		text-align: center;
+		background-position: center;
+		background-size: 100%;
+	}
+		div.bannerItem div.legend{
+			display: inline-block;
+			vertical-align: middle;
+			width: 350px;
+			text-align: left;
+		}
+			div.bannerItem div.legend h1.title{
+				font-family: 'Signika';
+				font-size: 18px;
+				color: #4e4e4e;
+				margin-bottom: 0;
+			}
+				div.bannerItem div.legend h1.title span{
+					font-family: inherit;
+					font-weight: bold;
+					color: inherit;
+					font-size: 25px !important;
+					display: block;
+					margin-bottom: 0;
+				}
+
+			div.bannerItem div.legend h2.caption{
+				font-size: 24px;
+				margin: 10px 0 15px;
+				color: #4e4e4e;
+				position: relative;
+				padding-bottom: 20px;
+				font-family: 'Signika';
+				margin-bottom: 0;
+			}
+				div.bannerItem div.legend h2.caption::after{
+					content: '';
+			        width: 50px;
+			        height: 3px;
+			        background-image: url('../../../img/bgLine.jpg');
+			        position: absolute;
+			        left: 0;
+			        bottom: 0px;
+			        margin-bottom: 10px;
+				}
+
+			div.bannerItem div.legend h3.text{
+				color: #4e4e4e;
+				font-size: 14px;
+			}
+
+			div.bannerItem div.legend a.btn{
+				margin-top: 15px;
+			}
+
+		div.bannerItem div.img{
+			display: inline-block;
+			vertical-align: middle;
+			width: 600px;
+			height: 400px;
+		}
+			div.bannerItem div.img img{
+				width: 100%;
+			}
+
+	div.mainBanner div.controller{
+	    width: 35px;
+	    height: 35px;
+	    background-size: 100%;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    cursor: pointer;
+	    position: absolute;
+	    margin-top: -40px;
+	    z-index: 995;
+	}
+
+    div.mainBanner div.controller .cycle-main-banner-prev{
+    	left: 100px;
+    }
+
+		div.mainBanner div.controller .cycle-main-banner-prev .cycle-main-banner-next{
+    		right: 100px;
+		}
